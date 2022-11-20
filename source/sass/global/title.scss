@@ -1,0 +1,41 @@
+.title {
+  // @include margin-zeroing;
+  font-family: "OpenSans", "Helvetica", sans-serif;
+  font-weight: 700;
+  color: $black;
+}
+
+.title--h1 {
+  font-size: 27px;
+  line-height: 30px;
+
+  // @media (min-width: $tablet-width) {
+  //   font-size: 60px;
+  //   line-height: 60px;
+  // }
+}
+
+.title--h2 {
+  font-size: 25px;
+  line-height: 30px;
+
+//   @media (min-width: $tablet-width) {
+//     font-size: 36px;
+//     line-height: 36px;
+//   }
+}
+
+.title--h3 {
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.title--h4 {
+  font-size: 17px;
+  line-height: 20px;
+
+//   @media (min-width: $tablet-width) {
+//     font-size: 20px;
+//     line-height: 26px;
+//   }
+}

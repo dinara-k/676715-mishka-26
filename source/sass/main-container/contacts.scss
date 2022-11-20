@@ -1,0 +1,100 @@
+// .contacts {
+//   @media (min-width: $desktop-width) {
+//     position: relative;
+//     overflow: hidden;
+//   }
+// }
+
+// .contacts--inner {
+//   background-color: $grey-f2;
+// }
+
+// .contacts__content {
+//   @include block-centering-mobile;
+//   padding: 26px 0 16px 0;
+
+//   @media (min-width: $tablet-width) {
+//     @include block-centering-tablet;
+//     padding: 60px 40px 50px 40px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     position: absolute;
+//     top: 95px;
+//     left: 110px;
+//     width: 565px;
+//     margin: 0;
+//     padding: 60px 80px 50px 80px;
+//     background-color: $white;
+//   }
+// }
+
+// .contacts__content-wrapper {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   padding-bottom: 10px;
+// }
+
+.contacts__parametrs,
+.contacts__email {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contacts__email {
+  color: inherit;
+  text-decoration-color: $green-62;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+}
+
+.contacts__email:hover {
+  color: $green-46;
+  text-decoration-color: $green-46;
+}
+
+.contacts__email:focus {
+  color: $green-46;
+  text-decoration-color: rgba($green-46, 0.3);
+  outline: none;
+}
+
+.contacts__email:active {
+  color: $green-46;
+  text-decoration-color: rgba($green-46, 0.1);
+}
+
+// .contacts__item {
+//   width: 139px;
+// }
+
+.contacts__address {
+  font-style: normal;
+  // line-height: 20px;
+
+//   @media (min-width: $tablet-width) {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     width: 156px;
+//     text-align: right;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     text-align: left;
+//   }
+}
+
+// .contacts iframe {
+//   display: block;
+//   width: 100%;
+//   height: 362px;
+//   border: none;
+
+//   @media (min-width: $tablet-width) {
+//     height: 400px;
+//   }
+// }
+
+

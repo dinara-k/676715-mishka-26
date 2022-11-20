@@ -1,11 +1,12 @@
+<!-- остановилась здесь -->
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>HTML Academy: Мишка</title>
-    <!-- <link href="css/style.min.css" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
@@ -17,9 +18,9 @@
     <header class="header">
       <a class="header__logo logo">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logotype/logo-img-desktop.svg" width="71" height="59">
-          <source media="(min-width: 768px)" srcset="img/logotype/logo-img-tablet.svg" width="61" height="50">
-          <img class="header__logo-image" src="img/logotype/logo-img-mobile.svg" width="34" height="38" alt="Логотип Мишка.">
+          <!-- <source media="(min-width: 1440px)" srcset="img/logotype/logo-img-desktop.svg" width="71" height="59">
+          <source media="(min-width: 768px)" srcset="img/logotype/logo-img-tablet.svg" width="61" height="50"> -->
+          <img class="header__logo-image" src="img/logotype/logo-img-mobile.svg" width="86" height="35" alt="Логотип Мишка.">
         </picture>
       </a>
       <!-- Меню -->
@@ -29,22 +30,19 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <!-- <li class="main-nav__item site-list__item">
-              <a class="main-nav__link site-list__link site-list__link--active">
-                <span class="visually-hidden">Главная?</span>
-              </a>
-            </li> -->
             <li class="main-nav__item site-list__item">
-              <a class="main-nav__link site-list__link" href="catalog.html">Каталог товаров</a>
+              <a class="main-nav__link site-list__link" href="catalog.html">Каталог товаров</a> <!-- site-list__link--active - активный пункт меню -->
             </li>
             <li class="main-nav__item site-list__item">
               <a class="main-nav__link site-list__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item site-list__item">
-              <a class="main-nav__link site-list__link" href="#">Поиск по сайту</a>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="main-nav__item user-list__item">
+              <a class="main-nav__link user-list__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item site-list__item">
-              <a class="main-nav__link site-list__link" href="#">Корзина: пока пуста</a>
+            <li class="main-nav__item user-list__item">
+              <a class="main-nav__link user-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -62,57 +60,72 @@
       </section>
       <!-- Разделы каталога -->
       <section class="catalog">
+        <h2 class="visually-hidden">Разделы каталога</h2>
         <ul class="catalog__sections text-container">
           <li class="catalog__section">
             <div class="catalog__section-container catalog__section-container--slimming">
-              <h2 class="title title--h2">
+              <h3 class="title title--h3">
                 <a class="catalog__section-link" href="#">Предметы интерьера</a>
-              </h2>
+              </h3>
             </div>
           </li>
           <li class="catalog__section">
             <div class="catalog__section-container catalog__section-container--mass-gain">
-              <h2 class="title title--h2">
+              <h3 class="title title--h3">
                 <a class="catalog__section-link" href="#">Детские игрушки</a>
-              </h2>
+              </h3>
             </div>
           </li>
+          <!-- <li class="catalog__section">
+            <div class="catalog__section-container catalog__section-container--slimming">
+              <h3 class="title title--h3">
+                <a class="catalog__section-link" href="#">Предметы интерьера</a>
+              </h3>
+            </div>
+          </li>
+          <li class="catalog__section">
+            <div class="catalog__section-container catalog__section-container--mass-gain">
+              <h3 class="title title--h3">
+                <a class="catalog__section-link" href="#">Детские игрушки</a>
+              </h3>
+            </div>
+          </li> -->
         </ul>
       </section>
       <!-- Блок "Товар недели" -->
-      <section class="product">
+      <section class="product-week">
         <div class="text-container">
-          <div class="product__item-wrapper">
-            <div class="product__content">
-              <h2 class="title title--h1">Вязаные корзинки</h2>
-              <div class="product__images">
+          <div class="product-week__item-wrapper">
+            <div class="product-week__content">
+              <h2 class="title title--h2">Вязаные корзинки</h2>
+              <div class="product-week__images">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/products/product-1-tablet.webp 1x, img/products/product-1-tablet@2x.webp 2x">
+                  <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/products/product-1-tablet.webp 1x, img/products/product-1-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/products/product-1-mobile.webp 1x, img/products/product-1-mobile@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/products/product-1-tablet.png 1x, img/products/product-1-tablet@2x.png 2x" width="161" height="172">
-                  <img class="product__image" src="img/products/product-1-mobile.png" srcset="img/products/product-1-mobile@2x.png 2x" width="68" height="86" alt="Корзинки трёх размеров.">
+                  <source media="(min-width: 768px)" srcset="img/products/product-1-tablet.png 1x, img/products/product-1-tablet@2x.png 2x" width="161" height="172"> -->
+                  <img class="product-week__image" src="img/products/product-main-mobile.jpg" srcset="img/products/product-1-mobile@2x.png 2x" width="260" height="315" alt="Корзинки трёх размеров.">
                 </picture>
               </div>
               <h3 class="title title--h4">Товар недели</h3>
-              <p class="product__description description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-              <dl class="product__parametrs">
-                <div class="product__parametrs-container">
-                  <dt class="product__parametrs-name">Цвет:</dt>
-                  <dd class="product__parametrs-value">тиффани/серый</dd>
+              <p class="product-week__description description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+              <dl class="product-week__parametrs">
+                <div class="product-week__parametrs-container">
+                  <dt class="product-week__parametrs-name">Цвет:</dt>
+                  <dd class="product-week__parametrs-value">тиффани/серый</dd>
                 </div>
-                <div class="product__parametrs-container">
-                  <dt class="product__parametrs-name">Диаметр:</dt>
-                  <dd class="product__parametrs-value">25 см</dd>
+                <div class="product-week__parametrs-container">
+                  <dt class="product-week__parametrs-name">Диаметр:</dt>
+                  <dd class="product-week__parametrs-value">25 см</dd>
                 </div>
-                <div class="product__parametrs-container">
-                  <dt class="product__parametrs-name">Высота:</dt>
-                  <dd class="product__parametrs-value">15 см</dd>
+                <div class="product-week__parametrs-container">
+                  <dt class="product-week__parametrs-name">Высота:</dt>
+                  <dd class="product-week__parametrs-value">15 см</dd>
                 </div>
               </dl>
             </div>
-            <div>
-              <b>Цена: 990 руб.</b>
-              <button class="product__button button button--main" type="button">Заказать</button>
+            <div class="product-week__price-button">
+              <b class="product-week__price">Цена: 990 руб.</b>
+              <button class="product-week__button button button--main" type="button">Заказать</button> <!-- button--disabled - неактивная кнопка / ссылка -->
             </div>
           </div>
         </div>
@@ -120,8 +133,9 @@
       <!-- Блок "Коротко о нас:" -->
       <section class="advantages">
         <div class="advantages__container">
-          <h2 class="title title--h1">Коротко о нас:</h2>
-          <ul class="advantages__list">
+          <h2 class="title title--h2">Коротко о нас:</h2>
+          <!-- список с p -->
+          <!-- <ul class="advantages__list">
             <li class="advantages__item advantages__item--useful">
               <p class="description">Экологически чистые материалы</p>
             </li>
@@ -140,28 +154,55 @@
             <li class="advantages__item advantages__item--change">
               <p class="description">Поставляется в подарочной упаковке</p>
             </li>
+          </ul> -->
+          <!-- список с h3 -->
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--useful">
+              <h3 class="title title--h4">Экологически чистые материалы</h3>
+            </li>
+            <li class="advantages__item advantages__item--powder">
+              <h3 class="title title--h4">Скандинавский стиль по российской цене</h3>
+            </li>
+            <li class="advantages__item advantages__item--eat">
+              <h3 class="title title--h4">Увеличивает лайки на фотографиях</h3>
+            </li>
+            <li class="advantages__item advantages__item--change">
+              <h3 class="title title--h4">Связано вручную с любовью и умилением</h3>
+            </li>
+            <li class="advantages__item advantages__item--eat">
+              <h3 class="title title--h4">Поддержка отечественного производителя</h3>
+            </li>
+            <li class="advantages__item advantages__item--change">
+              <h3 class="title title--h4">Поставляется в подарочной упаковке</h3>
+            </li>
           </ul>
         </div>
       </section>
       <section class="reviews">
         <div class="reviews__container">
-          <h2 class="title title--h1">Отзывы</h2>
+          <h2 class="title title--h2">Отзывы</h2>
           <ol class="reviews__list">
             <li class="reviews__item">
-              <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <b>Анастасия Красильникова</b>
-              <p>@misssssiskras</p>
+              <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <div class="reviews__owner-instagram">
+                <b class="reviews__owner">Анастасия Красильникова</b>
+                <span class="reviews__instagram">@misssssiskras</span>
+              </div>
             </li>
             <li class="reviews__item visually-hidden">
-              <p>Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <b>Екатерина Красильникова</b>
-              <p>@misssssiskras2</p>
+              <p class="reviews__description">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <div class="reviews__owner-instagram">
+                <b class="reviews__owner">Екатерина Красильникова</b>
+                <span class="reviews__instagram">@misssssiskras2</span>
+              </div>
             </li>
             <li class="reviews__item visually-hidden">
-              <p>Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <b>Елена Красильникова</b>
-              <p>@misssssiskras3</p>
-            </li>
+              <p class="reviews__description">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <div class="reviews__owner-instagram">
+                <b class="reviews__owner">Елена Красильникова</b>
+                <span class="reviews__instagram">@misssssiskras3</span>
+            </div>
+          </li>
           </ol>
           <div class="slider-controls">
             <button class="slider-button slider-prev" type="button">
@@ -171,19 +212,19 @@
               <span class="visually-hidden">Следующий слайд</span>
             </button>
           </div>
-          <a href="#">Написать</a>
+          <a class="button" href="#">Написать</a>
         </div>
       </section>
       <!-- Блок "Контакты" -->
       <div class="contacts">
         <div class="contacts__content">
           <div class="contacts__content-wrapper">
-            <h2 class="title title--h4">Контакты</h2>
+            <h2 class="title title--h2">Контакты</h2>
             <dl class="contacts__parametrs">
               <div class="contacts__parametrs-container">
                 <dt class="contacts__parametrs-name">e-mail:</dt>
                 <dd class="contacts__parametrs-value">
-                  <a href="mailto:info@mimimishkashop.ru" target="_blank">info@mimimishkashop.ru</a>
+                  <a class="contacts__email" href="mailto:info@mimimishkashop.ru" target="_blank">info@mimimishkashop.ru</a>
                 </dd>
               </div>
               <div class="contacts__parametrs-container">
@@ -198,13 +239,12 @@
           </div>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.126228473118!2d30.322446584913166!3d59.93991494093169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1666179998593!5m2!1sru!2sru" title="Магазин Мишка на карте" allowfullscreen></iframe>
-        <a href="#">Напишите нам</a>
+        <a class="button" href="#">Напишите нам</a>
       </div>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__container">
-          <!-- остановилась здесь -->
           <!-- <a class="footer__logo logo">
             <img class="footer__logo-title" src="img/logotype/logo-title-mobile.svg" width="128" height="24" alt="Кэт энерджи.">
           </a> -->
@@ -212,31 +252,31 @@
             <li class="social__element">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
-                <svg class="social__icon" width="27" height="17" aria-label="ВК-страница HTML Academy">
+                <!-- <svg class="social__icon" width="27" height="17" aria-label="ВК-страница HTML Academy">
                   <use href="img/sprite.svg#icon-vk"></use>
-                </svg>
+                </svg> -->
               </a>
             </li>
             <li class="social__element">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
-                <svg class="social__icon" width="24" height="19" aria-label="ВК-страница HTML Academy">
+                <!-- <svg class="social__icon" width="24" height="19" aria-label="Youtube-канал HTML Academy">
                   <use href="img/sprite.svg#icon-youtube"></use>
-                </svg>
+                </svg> -->
               </a>
             </li>
             <li class="social__element">
               <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy">
                 <span class="visually-hidden">Telegram</span>
-                <svg class="social__icon" width="20" height="18" aria-label="Telegram-чат HTML Academy">
+                <!-- <svg class="social__icon" width="20" height="18" aria-label="Telegram-чат HTML Academy">
                   <use href="img/sprite.svg#icon-tg"></use>
-                </svg>
+                </svg> -->
               </a>
             </li>
           </ul>
           <div class="footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="copyright__text">HTML Academy</span>
+              <span class="copyright__text">Разработано</span>
               <svg class="copyright__icon" width="27" height="34" aria-label="Сайт HTML Academy">
                 <use href="img/sprite.svg#icon-copyright"></use>
               </svg>
@@ -245,12 +285,40 @@
         </div>
       </div>
     </footer>
+    <!-- остановилась здесь -->
     <!-- Модальное окно "Добавить в корзину" -->
     <div class="modal modal--close"> <!-- modal--close - модалка закрыта -->
       <section class="modal__message modal__message--error">
-        <h2 class="modal__title title title--h1">Что-то пошло не&nbsp;так!</h2>
-        <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button button button-main" type="button">OK</button>
+        <h2 class="modal__title title title--h1">Добавить в корзину</h2>
+        <p class="modal__description description">Выберите размер:</p>
+        <form class="product-size-form" action="https://echo.htmlacademy.ru" method="get">
+          <div>
+            <ul class="product-size-form__list">
+              <li class="product-size-form__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="size-of-product" value="small" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">S</span>
+                </label>
+              </li>
+              <li class="product-size-form__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="size-of-product" value="medium">
+                  <span class="control__mark"></span>
+                  <span class="control__label">M</span>
+                </label>
+              </li>
+              <li class="product-size-form__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="size-of-product" value="large">
+                  <span class="control__mark"></span>
+                  <span class="control__label">L</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </form>
+        <button class="modal__button" type="button">Добавить</button>
       </section>
     </div>
     <script src="js/script.js"></script>
