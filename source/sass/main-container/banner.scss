@@ -1,6 +1,10 @@
-// .banner {
+.banner {
+  min-height: 282px;
+  background-image: url("../img/banner/banner-background-mobile.jpg");
+  background-repeat: no-repeat;
+  // background-size: cover;
+  background-position: center top;
 //   position: relative;
-//   min-height: 480px;
 //   margin-bottom: 20px;
 
 //   @media (min-width: $tablet-width) {
@@ -12,7 +16,7 @@
 //     min-height: 555px;
 //     margin-bottom: 82px;
 //   }
-// }
+}
 
 .banner__wrapper {
   // position: relative;

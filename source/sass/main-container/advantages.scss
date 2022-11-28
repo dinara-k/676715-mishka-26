@@ -1,3 +1,4 @@
+/*
 .advantages {
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $grey-e6;
@@ -32,52 +33,68 @@
     padding-bottom: 81px;
   }
 }
+*/
 
 .advantages__list {
-  @include list-zeroing;
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 53px;
+  // padding-bottom: 53px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 250px);
-    gap: 132px 135px;
-    padding-bottom: 104px;
+    flex-direction: row;
+    column-gap: 70px;
+    // grid-template-columns: repeat(2, 1fr);
+    // gap: 111px 70px;
+    // padding-bottom: 104px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 75px 80px;
-    padding-bottom: 134px;
+    column-gap: 85px;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // gap: 75px 80px;
+    // padding-bottom: 134px;
   }
+}
+
+.advantages__list-item {
+  @include list-zeroing;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.advantages__list-item:not(:last-child) {
+  // margin-bottom: 83px;
 }
 
 .advantages__item {
-  position: relative;
-  padding-left: 80px;
+  // position: relative;
+  padding-top: 83px;
+
 
   @media (min-width: $tablet-width) {
-    padding-top: 112px;
-    padding-left: 0;
+    padding-top: 110px;
+  //   padding-left: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 245px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   width: 245px;
+  // }
 }
 
 .advantages__item:not(:last-child) {
-  margin-bottom: 26px;
+  // margin-bottom: 83px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 }
 
+/*
 .advantages__item::before {
   position: absolute;
   content: "";
@@ -157,3 +174,4 @@
     content: "4";
   }
 }
+*/

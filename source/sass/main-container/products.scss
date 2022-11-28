@@ -8,8 +8,8 @@
 //   }
 // }
 
-// .products__list {
-//   @include list-zeroing;
+.products__list {
+  @include list-zeroing;
 //   position: relative;
 //   border-top: 1px solid #ebebeb;
 
@@ -25,7 +25,7 @@
 //     grid-template-columns: repeat(4, 245px);
 //     gap: 143px 80px;
 //   }
-// }
+}
 
 // .products__item {
 //   @include block-centering-mobile;
@@ -62,19 +62,19 @@
 //   }
 // }
 
-// .products__item-wrapper {
-//   display: grid;
-//   grid-template-columns: repeat(2, 140px);
+.products__item-wrapper {
 //   align-items: end;
 //   padding-bottom: 22px;
 
-//   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 //     display: flex;
 //     flex-direction: column;
 //     align-items: center;
 //     padding-bottom: 33px;
-//   }
-// }
+  }
+}
 
 // .products__images {
 //   display: flex;
@@ -102,6 +102,12 @@
 //     left: 4px;
 //   }
 // }
+
+.products__content-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 // .products__content {
 //   @media (min-width: $tablet-width) {

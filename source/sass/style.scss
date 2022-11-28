@@ -1,12 +1,12 @@
 // Global
 @import "./global/variable.scss";
-// @import "./global/mixin.scss";
+@import "./global/mixin.scss";
 @import "./global/fonts.scss";
 @import "./global/title.scss";
 // @import "./global/text.scss";
 // @import "./global/text-container.scss";
 @import "./global/button.scss";
-// @import "./global/global.scss";
+@import "./global/global.scss";
 @import "./global/page.scss";
 @import "./global/modal.scss";
 @import "./global/product-size-form.scss";
@@ -14,7 +14,8 @@
 // Header
 @import "./header/header.scss";
 @import "./header/logo.scss";
-// @import "./header/main-nav.scss";
+@import "./header/main-nav.scss";
+@import "./header/menu-background.scss";
 @import "./header/site-list.scss";
 @import "./header/user-list.scss";
 
@@ -23,7 +24,7 @@
 @import "./main-container/banner.scss";
 @import "./main-container/catalog.scss";
 @import "./main-container/product-week.scss";
-// @import "./main-container/advantages.scss";
+@import "./main-container/advantages.scss";
 @import "./main-container/reviews.scss";
 // @import "./main-container/example.scss";
 // @import "./main-container/main-link.scss";

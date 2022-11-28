@@ -1,3 +1,7 @@
+// .site-list {
+
+// }
+
 .site-list__item {
   text-align: center;
   background-color: $white;
@@ -16,11 +20,10 @@
   background-color: $white;
   text-decoration: none;
 
-  // @media (min-width: $tablet-width) {
-  //   font-size: 18px;
-  //   line-height: 24px;
-  //   font-weight: 400;
-  // }
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    background-color: $grey-f9;
+  }
 
   // @media (min-width: $desktop-width) {
   //   font-size: 20px;

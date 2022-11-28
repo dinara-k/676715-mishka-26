@@ -1,3 +1,7 @@
+// .user-list {
+//   order: 1;
+// }
+
 .user-list__item {
   text-align: center;
   background-color: $white;
@@ -52,6 +56,22 @@
   // @media (min-width: $desktop-width) {
   //   text-decoration-color: $white;
   // }
+}
+
+.user-list__button {
+  font-family: "OpenSans", "Helvetica", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black;
+  background-color: $white;
+  border: none;
+}
+
+.user-list__button-name {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 // .user-list--inner .user-list__link {

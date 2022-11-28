@@ -23,27 +23,27 @@
   // display: flex;
   // justify-content: space-between;
   // align-items: center;
-  // width: 191px;
-  // height: 38px;
+  width: 86px;
+  height: 35px;
   // margin-top: 13px;
   // margin-left: 20px;
   // padding-top: 10px;
   // padding-bottom: 17px;
   text-decoration: none;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 174px;
-  //   height: 52px;
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
   //   margin: 0;
-  // }
+  }
 
-  // @media (min-width: $desktop-width) {
-  //   width: 202px;
-  //   height: 59px;
-  // }
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
 }
 
-.header__logo-image {
-  display: block;
-  width: 100%;
-}
+// .header__logo-image {
+//   display: block;
+//   width: 100%;
+// }

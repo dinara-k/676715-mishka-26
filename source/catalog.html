@@ -3,7 +3,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
     <!-- <link rel="icon" href="favicon.ico">
@@ -63,15 +63,17 @@
                   <img class="products__image" src="img/products/product-1-mobile.jpg" srcset="img/products/product-1-mobile@2x.png 2x" width="260" height="195" alt="Зайчик-попрыгайчик.">
                 </picture>
               </div>
-              <div class="products__content">
-                <h2 class="title title--h4">Зайчик-попрыгайчик</h2>
-                <p class="products__parametrs">Рост 30 см, вес 200 г</p>
-              </div>
-              <div class="products__controls">
-                <b class="products__price">1 200 руб.</b>
-                <button class="products__button" type="button">
-                  <span class="visually-hidden">Купить</span>
-                </button>
+              <div class="products__content-controls">
+                <div class="products__content">
+                  <h2 class="title title--h4">Зайчик-попрыгайчик</h2>
+                  <p class="products__parametrs">Рост 30 см, вес 200 г</p>
+                </div>
+                <div class="products__controls">
+                  <b class="products__price">1 200 руб.</b>
+                  <button class="products__button" type="button">
+                    <span class="visually-hidden">Купить</span>
+                  </button>
+                </div>
               </div>
             </div>
           </li>
@@ -85,7 +87,8 @@
                   <img class="products__image" src="img/products/product-2-mobile.jpg" srcset="img/products/product-1-mobile@2x.png 2x" width="260" height="195" alt="Корзинка для белья.">
                 </picture>
               </div>
-              <div class="products__content">
+              <div class="products__content-controls">
+                <div class="products__content">
                 <h2 class="title title--h4">Корзинка для белья</h2>
                 <p class="products__parametrs">Диаметр 15 см, высота 10 см</p>
               </div>
@@ -94,6 +97,7 @@
                 <button class="products__button" type="button">
                   <span class="visually-hidden">Купить</span>
                 </button>
+                </div>
               </div>
             </div>
           </li>
@@ -107,7 +111,8 @@
                   <img class="products__image" src="img/products/product-3-mobile.jpg" srcset="img/products/product-1-mobile@2x.png 2x" width="260" height="195" alt="Большая корзинка для игрушек.">
                 </picture>
               </div>
-              <div class="products__content">
+              <div class="products__content-controls">
+                <div class="products__content">
                 <h2 class="title title--h4">Большая корзинка для игрушек</h2>
                 <p class="products__parametrs">Диаметр 30 см, высота 30 см</p>
               </div>
@@ -116,6 +121,7 @@
                 <button class="products__button" type="button">
                   <span class="visually-hidden">Купить</span>
                 </button>
+                </div>
               </div>
             </div>
           </li>
@@ -124,57 +130,57 @@
       <!-- Блок "Процесс производства" -->
       <section class="video">
         <div class="video__container">
-          <h2 class="title title--h4">Процесс производства</h2>
+          <h2 class="video__title title title--h4">Процесс производства</h2>
           <div class="video__block">
             <picture>
               <!-- <source media="(min-width: 1200px)" srcset="img/photo-video/video-image-desktop.jpg 1x, img/photo-video/video-image-desktop@2x.jpg 2x" width="800" height="500">
               <source media="(min-width: 768px)" srcset="img/photo-video/video-image-tablet.jpg 1x, img/photo-video/video-image-tablet@2x.jpg 2x" width="648" height="500"> -->
               <img class="video__image" src="img/video/video-image-mobile.jpg" srcset="img/photo-video/video-image-mobile@2x.jpg 2x" loading="lazy" width="260" height="150" alt="Видеопрезентация процесса производства.">
             </picture>
-            <button class="video__button" type="button">
+            <button class="video__button-play" type="button">
               <span class="visually-hidden">Запустить видеопрезентацию</span>
             </button>
           </div>
           <p class="video__text description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="button" href="form.html">Сделать заказ</a>
+          <a class="video__button button" href="form.html">Сделать заказ</a>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__container">
-          <!-- <a class="footer__logo logo">
-            <img class="footer__logo-title" src="img/logotype/logo-title-mobile.svg" width="128" height="24" alt="Кэт энерджи.">
-          </a> -->
+          <a class="footer__logo logo">
+            <img class="footer__logo-title" src="img/logotype/logo-footer.svg" width="102" height="34" alt="Логотип Мишка.">
+          </a>
           <ul class="footer__social social">
             <li class="social__element">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">ВКонтакте</span>
-                <svg class="social__icon" width="27" height="17" aria-label="ВК-страница HTML Academy">
+                <span class="0visually-hidden">ВКонтакте</span>
+                <!-- <svg class="social__icon" width="27" height="17" aria-label="ВК-страница HTML Academy">
                   <use href="img/sprite.svg#icon-vk"></use>
-                </svg>
+                </svg> -->
               </a>
             </li>
             <li class="social__element">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube</span>
-                <svg class="social__icon" width="24" height="19" aria-label="ВК-страница HTML Academy">
+                <span class="0visually-hidden">Youtube</span>
+                <!-- <svg class="social__icon" width="24" height="19" aria-label="Youtube-канал HTML Academy">
                   <use href="img/sprite.svg#icon-youtube"></use>
-                </svg>
+                </svg> -->
               </a>
             </li>
             <li class="social__element">
               <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy">
-                <span class="visually-hidden">Telegram</span>
-                <svg class="social__icon" width="20" height="18" aria-label="Telegram-чат HTML Academy">
+                <span class="0visually-hidden">Telegram</span>
+                <!-- <svg class="social__icon" width="20" height="18" aria-label="Telegram-чат HTML Academy">
                   <use href="img/sprite.svg#icon-tg"></use>
-                </svg>
+                </svg> -->
               </a>
             </li>
           </ul>
           <div class="footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="copyright__text">HTML Academy</span>
+              <span class="copyright__text">Разработано</span>
               <svg class="copyright__icon" width="27" height="34" aria-label="Сайт HTML Academy">
                 <use href="img/sprite.svg#icon-copyright"></use>
               </svg>

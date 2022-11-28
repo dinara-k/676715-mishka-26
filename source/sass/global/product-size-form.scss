@@ -9,3 +9,9 @@
   //   line-height: 30px;
   // }
 }
+
+.product-size-form__list {
+  @include list-zeroing;
+  display: flex;
+  flex-wrap: wrap;
+}

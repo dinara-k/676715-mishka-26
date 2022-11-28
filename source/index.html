@@ -3,7 +3,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
     <!-- <link rel="icon" href="favicon.ico">
@@ -29,20 +29,25 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__item site-list__item">
-              <a class="main-nav__link site-list__link" href="catalog.html">Каталог товаров</a> <!-- site-list__link--active - активный пункт меню -->
-            </li>
-            <li class="main-nav__item site-list__item">
-              <a class="main-nav__link site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
+          <div class="main-nav__wrapper-menu-delivery menu-background">
+            <ul class="main-nav__list site-list">
+              <li class="main-nav__item site-list__item">
+                <a class="main-nav__link site-list__link" href="catalog.html">Каталог товаров</a> <!-- site-list__link--active - активный пункт меню -->
+              </li>
+              <li class="main-nav__item site-list__item">
+                <a class="main-nav__link site-list__link" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <p class="main-nav__description">Бесплатная доставка по России</p>
+          </div>
           <ul class="main-nav__list user-list">
             <li class="main-nav__item user-list__item">
-              <a class="main-nav__link user-list__link" href="#">Поиск по сайту</a>
+              <button class="main-nav__button user-list__button" type="button">
+                <span class="user-list__button-name">Поиск по сайту</span>
+              </button>
             </li>
             <li class="main-nav__item user-list__item">
-              <a class="main-nav__link user-list__link" href="#">Корзина: пока пуста</a>
+              <a class="main-nav__link user-list__link">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -95,9 +100,8 @@
       <!-- Блок "Товар недели" -->
       <section class="product-week">
         <div class="text-container">
-          <div class="product-week__item-wrapper">
-            <div class="product-week__content">
-              <h2 class="title title--h2">Вязаные корзинки</h2>
+          <div class="product-week__item">
+            <div class="product-week__item-wrapper">
               <div class="product-week__images">
                 <picture>
                   <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/products/product-1-tablet.webp 1x, img/products/product-1-tablet@2x.webp 2x">
@@ -106,26 +110,33 @@
                   <img class="product-week__image" src="img/products/product-main-mobile.jpg" srcset="img/products/product-1-mobile@2x.png 2x" width="260" height="315" alt="Корзинки трёх размеров.">
                 </picture>
               </div>
-              <h3 class="title title--h4">Товар недели</h3>
-              <p class="product-week__description description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-              <dl class="product-week__parametrs">
-                <div class="product-week__parametrs-container">
-                  <dt class="product-week__parametrs-name">Цвет:</dt>
-                  <dd class="product-week__parametrs-value">тиффани/серый</dd>
+              <!-- <div class="product-week__content"> -->
+                <div class="product-week__title">
+                  <h2 class="product-week__title-main title title--h2">Вязаные корзинки</h2>
+                  <h3 class="product-week__title-sub title title--h4">Товар недели</h3>
                 </div>
-                <div class="product-week__parametrs-container">
-                  <dt class="product-week__parametrs-name">Диаметр:</dt>
-                  <dd class="product-week__parametrs-value">25 см</dd>
+                <div class="product-week__description-parametrs">
+                  <p class="product-week__description description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+                  <dl class="product-week__parametrs">
+                    <div class="product-week__parametrs-container">
+                      <dt class="product-week__parametrs-name">Цвет:</dt>
+                      <dd class="product-week__parametrs-value">тиффани/серый</dd>
+                    </div>
+                    <div class="product-week__parametrs-container">
+                      <dt class="product-week__parametrs-name">Диаметр:</dt>
+                      <dd class="product-week__parametrs-value">25 см</dd>
+                    </div>
+                    <div class="product-week__parametrs-container">
+                      <dt class="product-week__parametrs-name">Высота:</dt>
+                      <dd class="product-week__parametrs-value">15 см</dd>
+                    </div>
+                  </dl>
                 </div>
-                <div class="product-week__parametrs-container">
-                  <dt class="product-week__parametrs-name">Высота:</dt>
-                  <dd class="product-week__parametrs-value">15 см</dd>
-                </div>
-              </dl>
-            </div>
-            <div class="product-week__price-button">
-              <b class="product-week__price">Цена: 990 руб.</b>
-              <button class="product-week__button button button--main" type="button">Заказать</button> <!-- button--disabled - неактивная кнопка / ссылка -->
+              <!-- </div> -->
+              <div class="product-week__price-button">
+                <b class="product-week__price">Цена: 990 руб.</b>
+                <button class="product-week__button button button--main" type="button">Заказать</button> <!-- button--disabled - неактивная кнопка / ссылка -->
+              </div>
             </div>
           </div>
         </div>
@@ -156,31 +167,35 @@
             </li>
           </ul> -->
           <!-- список с h3 -->
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--useful">
-              <h3 class="title title--h4">Экологически чистые материалы</h3>
-            </li>
-            <li class="advantages__item advantages__item--powder">
-              <h3 class="title title--h4">Скандинавский стиль по российской цене</h3>
-            </li>
-            <li class="advantages__item advantages__item--eat">
-              <h3 class="title title--h4">Увеличивает лайки на фотографиях</h3>
-            </li>
-            <li class="advantages__item advantages__item--change">
-              <h3 class="title title--h4">Связано вручную с любовью и умилением</h3>
-            </li>
-            <li class="advantages__item advantages__item--eat">
-              <h3 class="title title--h4">Поддержка отечественного производителя</h3>
-            </li>
-            <li class="advantages__item advantages__item--change">
-              <h3 class="title title--h4">Поставляется в подарочной упаковке</h3>
-            </li>
-          </ul>
+          <div class="advantages__list">
+            <ul class="advantages__list-item">
+              <li class="advantages__item advantages__item--useful">
+                <h3 class="title title--h4">Экологически чистые&nbsp;материалы</h3>
+              </li>
+              <li class="advantages__item advantages__item--powder">
+                <h3 class="title title--h4">Скандинавский стиль по&nbsp;российской&nbsp;цене</h3>
+              </li>
+              <li class="advantages__item advantages__item--eat">
+                <h3 class="title title--h4">Увеличивает лайки на&nbsp;фотографиях</h3>
+              </li>
+            </ul>
+            <ul class="advantages__list-item">
+              <li class="advantages__item advantages__item--change">
+                <h3 class="title title--h4">Связано вручную с&nbsp;любовью&nbsp;и&nbsp;умилением</h3>
+              </li>
+              <li class="advantages__item advantages__item--eat">
+                <h3 class="title title--h4">Поддержка отечественного производителя</h3>
+              </li>
+              <li class="advantages__item advantages__item--change">
+                <h3 class="title title--h4">Поставляется в&nbsp;подарочной&nbsp;упаковке</h3>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="reviews">
         <div class="reviews__container">
-          <h2 class="title title--h2">Отзывы</h2>
+          <h2 class="reviews__title title title--h2">Отзывы</h2>
           <ol class="reviews__list">
             <li class="reviews__item">
               <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -204,22 +219,22 @@
             </div>
           </li>
           </ol>
-          <div class="slider-controls">
-            <button class="slider-button slider-prev" type="button">
+          <div class="reviews__slider-controls">
+            <button class="reviews__slider-button reviews__slider-prev" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
-            <button class="slider-button slider-next" type="button">
+            <button class="reviews__slider-button reviews__slider-next" type="button">
               <span class="visually-hidden">Следующий слайд</span>
             </button>
           </div>
-          <a class="button" href="#">Написать</a>
+          <a class="reviews__button button" href="#">Написать</a>
         </div>
       </section>
       <!-- Блок "Контакты" -->
       <div class="contacts">
         <div class="contacts__content">
           <div class="contacts__content-wrapper">
-            <h2 class="title title--h2">Контакты</h2>
+            <h2 class="contacts__title title title--h2">Контакты</h2>
             <dl class="contacts__parametrs">
               <div class="contacts__parametrs-container">
                 <dt class="contacts__parametrs-name">e-mail:</dt>
@@ -231,27 +246,27 @@
                 <dt class="contacts__parametrs-name">адрес:</dt>
                 <dd class="contacts__parametrs-value">
                   <address class="contacts__item contacts__address">
-                    <span>г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис 101</span>
+                    <span>г. Санкт-Петербург ул.&nbsp;Большая&nbsp;Конюшенная д.&nbsp;19/8, офис 101</span>
                   </address>
                 </dd>
               </div>
             </dl>
           </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.126228473118!2d30.322446584913166!3d59.93991494093169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1666179998593!5m2!1sru!2sru" title="Магазин Мишка на карте" allowfullscreen></iframe>
-        <a class="button" href="#">Напишите нам</a>
+        <iframe class="contacts_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.126228473118!2d30.322446584913166!3d59.93991494093169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1666179998593!5m2!1sru!2sru" title="Магазин Мишка на карте" allowfullscreen></iframe>
+        <a class="contacts_button button" href="#">Напишите нам</a>
       </div>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__container">
-          <!-- <a class="footer__logo logo">
-            <img class="footer__logo-title" src="img/logotype/logo-title-mobile.svg" width="128" height="24" alt="Кэт энерджи.">
-          </a> -->
+          <a class="footer__logo logo">
+            <img class="footer__logo-title" src="img/logotype/logo-footer.svg" width="102" height="34" alt="Логотип Мишка.">
+          </a>
           <ul class="footer__social social">
             <li class="social__element">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">ВКонтакте</span>
+                <span class="0visually-hidden">ВКонтакте</span>
                 <!-- <svg class="social__icon" width="27" height="17" aria-label="ВК-страница HTML Academy">
                   <use href="img/sprite.svg#icon-vk"></use>
                 </svg> -->
@@ -259,7 +274,7 @@
             </li>
             <li class="social__element">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube</span>
+                <span class="0visually-hidden">Youtube</span>
                 <!-- <svg class="social__icon" width="24" height="19" aria-label="Youtube-канал HTML Academy">
                   <use href="img/sprite.svg#icon-youtube"></use>
                 </svg> -->
@@ -267,7 +282,7 @@
             </li>
             <li class="social__element">
               <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy">
-                <span class="visually-hidden">Telegram</span>
+                <span class="0visually-hidden">Telegram</span>
                 <!-- <svg class="social__icon" width="20" height="18" aria-label="Telegram-чат HTML Academy">
                   <use href="img/sprite.svg#icon-tg"></use>
                 </svg> -->

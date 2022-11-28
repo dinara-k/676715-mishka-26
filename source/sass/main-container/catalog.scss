@@ -10,15 +10,19 @@
 //   }
 // }
 
-// .catalog__sections {
-//   @include list-zeroing;
+.catalog__sections {
+  @include list-zeroing;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 //   @media (min-width: $desktop-width) {
 //     display: flex;
 //     flex-wrap: wrap;
 //     justify-content: space-between;
 //   }
-// }
+}
 
 .catalog__section {
   // background-color: $grey-f2;

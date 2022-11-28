@@ -11,37 +11,41 @@
 //   }
 // }
 
-// .footer__container {
+.footer__container {
+  text-align: center;
 //   @include block-centering-mobile;
 
-//   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
 //     @include block-centering-tablet;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 //   @media (min-width: $desktop-width) {
 //     @include block-centering-desktop;
 //   }
-// }
+}
 
-// .footer__logo {
+.footer__logo {
+  display: none;
 //   display: grid;
 //   place-items: center;
 //   padding-bottom: 32px;
 
-//   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    display: block;
 //     padding-bottom: 0;
-//   }
-// }
+  }
+}
 
-// .footer__social {
-//   @include list-zeroing;
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-// }
+
+.footer__social {
+  @include list-zeroing;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 // .footer__copyright {
 //   padding-top: 22px;
