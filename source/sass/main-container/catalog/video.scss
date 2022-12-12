@@ -1,0 +1,189 @@
+.video {
+  margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 455px;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 105px;
+  }
+}
+
+.video__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 22px;
+  border: 1px solid $grey-ec;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 39px;
+    // border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 367px;
+    margin-left: 683px;
+    padding-top: 96px;
+  }
+}
+
+.video__title {
+  position: relative;
+  padding: 0 20px 27px 91px;
+  // background-image: url("../img/icons/advantages/icon-eco.svg");
+  // background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    // order: 2;
+    padding: 0 40px 25px 107px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 57px 28px 80px;
+  }
+}
+
+.video__title::before {
+  position: absolute;
+  content: "";
+  top: 13px;
+  left: 34px;
+  width: 32px;
+  height: 22px;
+  background-image: url("../img/icons/video/icon-production.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 2px;
+    left: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -49px;
+    left: 80px;
+  }
+}
+
+.video .title--h4 {
+  line-height: 24px;
+}
+
+.video__block {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -455px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: -683px;
+  }
+}
+
+.video__image {
+  display: block;
+  width: auto;
+
+  // @media (min-width: $tablet-width) {
+  //   position: absolute;
+  //   content: "";
+  //   top: 0;
+  //   left: 0;
+  // }
+}
+
+.video__button-play {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.video__button-play::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 77px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-image: url("../img/icons/video/icon-play.svg");
+  background-repeat: no-repeat;
+}
+
+.video__button-play:hover {
+  transition: transform 5s ease-in;
+}
+
+.video__button-play:hover::before {
+  transform: scale(1.2);
+}
+
+.video__button-play:focus {
+  outline: none;
+  opacity: 0.3;
+}
+
+.video__button-play:focus::before {
+  transform: scale(0.8);
+}
+
+.video__button-play:active {
+  transition: transform 5s ease-in;
+  opacity: 0.3;
+}
+
+.video__button-play:active::before {
+  transform: scale(0.8);
+}
+
+.video__content {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 34px 33px 34px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px 46px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 57px 60px 80px;
+  }
+}
+
+.video__text {
+  padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+//   line-height: 24px;
+    // order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 51px;
+  }
+}
+
+.video__button {
+  font-size: 18px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    // order: 4;
+    font-size: 17px;
+  }
+}

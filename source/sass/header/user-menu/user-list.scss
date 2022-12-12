@@ -1,0 +1,86 @@
+// .user-list {
+//   order: 1;
+// }
+
+.user-list__item {
+  // text-align: center;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    // padding: 0 30px;
+    border-left: 1px solid rgba($black, 0.1);
+  }
+}
+
+.user-list__item:last-child {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.user-list__button,
+.user-list__link {
+  font-family: "OpenSans", "Helvetica", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black;
+  background-color: $white;
+}
+
+.user-list__button {
+  border: none;
+  cursor: pointer;
+}
+
+.user-list__link {
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 85px;
+  //   font-size: 18px;
+  //   line-height: 24px;
+  //   font-weight: 400;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   font-size: 20px;
+  //   line-height: 30px;
+  //   color: $white;
+  //   background-color: transparent;
+  // }
+}
+
+.user-list__button:hover,
+.user-list__link:hover {
+  color: rgba($black, 0.6);
+}
+
+.user-list__button:focus,
+.user-list__link:focus {
+  color: rgba($black, 0.5);
+  outline: none;
+}
+
+.user-list__button:active,
+.user-list__link:active {
+  color: rgba($black, 0.3);
+}
+
+.user-list__icon {
+  color: rgba($black, 0.2);
+}
+
+.user-list__button:hover .user-list__icon,
+.user-list__link:hover .user-list__icon {
+  color: $green-63;
+}
+
+.user-list__button:focus .user-list__icon,
+.user-list__link:focus .user-list__icon {
+  color: rgba($green-63, 0.7);
+}
+
+.user-list__button:active .user-list__icon,
+.user-list__link:active .user-list__icon {
+  color: rgba($green-63, 0.3);
+}

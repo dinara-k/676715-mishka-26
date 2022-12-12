@@ -1,3 +1,7 @@
+.main-container {
+  position: relative;
+}
+
 // .main-container .description {
 //   @include margin-zeroing;
 // }
@@ -8,6 +12,9 @@
 //   @media (min-width: $tablet-width) {
 //     border-top: 0;
 //   }
+// }
+
+// .main-container--inner {
 // }
 
 .main-container--inner .title--h1 {

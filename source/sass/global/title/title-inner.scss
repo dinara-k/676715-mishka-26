@@ -1,0 +1,12 @@
+.title-inner {
+  padding: 74px 0;
+  background-color: $grey-f1;
+
+  @media (min-width: $tablet-width) {
+    padding: 101px 0 87px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 101px 0 113px 0;
+  }
+}

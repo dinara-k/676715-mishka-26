@@ -10,15 +10,17 @@
 //   }
 // }
 
-// .social__element:not(:last-child) {
-//   margin-right: 26px;
-//   margin-bottom: 10px;
-// }
+.social__element:not(:last-child) {
+  margin-right: 31px;
+  padding-bottom: 10px;
+}
 
 .social__link {
   // display: block;
-  // width: 27px;
-  // height: 19px;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 22px;
   color: $black-23;
   background-color: $grey-f1;
   text-decoration: none;
@@ -37,8 +39,8 @@
   color: rgba($green-46, 0.3);
 }
 
-// .social__icon {
-//   display: grid;
-//   place-items: center;
-//   fill: $grey-66;
-// }
+.social__icon {
+  display: grid;
+  place-items: center;
+  fill: $black-23;
+}

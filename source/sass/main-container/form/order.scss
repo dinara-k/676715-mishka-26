@@ -1,0 +1,39 @@
+.order {
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 99px;
+  }
+}
+
+// .order .text-container {
+//   @media (min-width: $desktop-width) {
+// //     width: 840px;
+// //     margin-left: 0;
+// //     margin-right: 0;
+//     padding-left: 60px;
+//     // padding-right: 60px;
+//   }
+// }
+
+.order__description {
+  padding-bottom: 29px;
+//   font-family: "Oswald", "Verdana", sans-serif;
+//   color: $black;
+//   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 63px;
+    font-size: 17px;
+//     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 702px;
+    // margin: 0 auto;
+  }
+}

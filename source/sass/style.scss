@@ -2,48 +2,50 @@
 @import "./global/variable.scss";
 @import "./global/mixin.scss";
 @import "./global/fonts.scss";
-@import "./global/title.scss";
-// @import "./global/text.scss";
-// @import "./global/text-container.scss";
+@import "./global/title/title.scss";
+@import "./global/title/title-inner.scss";
+@import "./global/text.scss";
+@import "./global/text-container.scss";
 @import "./global/button.scss";
+@import "./global/zigzag/zigzag-white.scss";
+@import "./global/zigzag/zigzag-grey.scss";
 @import "./global/global.scss";
 @import "./global/page.scss";
-@import "./global/modal.scss";
-@import "./global/product-size-form.scss";
+@import "./global/modal/modal.scss";
+@import "./global/modal/product-size-form.scss";
+@import "./global/modal/modal-control.scss";
 
 // Header
 @import "./header/header.scss";
 @import "./header/logo.scss";
-@import "./header/main-nav.scss";
-@import "./header/menu-background.scss";
-@import "./header/site-list.scss";
-@import "./header/user-list.scss";
+@import "./header/catalog-menu/main-nav.scss";
+@import "./header/catalog-menu/menu-background.scss";
+@import "./header/catalog-menu/site-list.scss";
+@import "./header/user-menu/user-nav.scss";
+@import "./header/user-menu/user-list.scss";
+
+// Main-container
+@import "./main-container/main-container.scss";
 
 // Index - Main-container
-@import "./main-container/main-container.scss";
-@import "./main-container/banner.scss";
-@import "./main-container/catalog.scss";
-@import "./main-container/product-week.scss";
-@import "./main-container/advantages.scss";
-@import "./main-container/reviews.scss";
-// @import "./main-container/example.scss";
-// @import "./main-container/main-link.scss";
-@import "./main-container/contacts.scss";
-
+@import "./main-container/index/banner-catalog/banner-catalog.scss";
+@import "./main-container/index/banner-catalog/banner.scss";
+@import "./main-container/index/banner-catalog/catalog.scss";
+@import "./main-container/index/product-week.scss";
+@import "./main-container/index/advantages.scss";
+@import "./main-container/index/reviews.scss";
+@import "./main-container/index/contacts.scss";
 
 // Catalog - Main-container
-@import "./main-container/products.scss";
-@import "./main-container/video.scss";
-// @import "./main-container/pagination.scss";
-// @import "./main-container/products-additional.scss";
-// @import "./main-container/line.scss";
-// @import "./main-container/action.scss";
+@import "./main-container/catalog/products.scss";
+@import "./main-container/catalog/video.scss";
 
 // Form - Main-container
-@import "./main-container/order.scss";
-@import "./main-container/form.scss";
-// @import "./main-container/field.scss";
-// @import "./main-container/control.scss";
+@import "./main-container/form/order.scss";
+@import "./main-container/form/form.scss";
+@import "./main-container/form/line.scss";
+@import "./main-container/form/control.scss";
+@import "./main-container/form/field.scss";
 
 // Footer
 @import "./footer/footer.scss";

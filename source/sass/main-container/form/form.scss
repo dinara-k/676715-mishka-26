@@ -1,0 +1,501 @@
+.form {
+  padding-bottom: 55px;
+  font-family: "OpenSans", "Helvetica", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+    font-size: 19px;
+  //   line-height: 30px;
+  }
+}
+
+// .form__wrapper {
+//   @media (min-width: $desktop-width) {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     column-gap: 80px;
+//   }
+// }
+
+// .form .text-container {
+//   @media (min-width: $desktop-width) {
+// //     width: 840px;
+// //     margin-left: 0;
+// //     margin-right: 0;
+//     padding-left: 60px;
+//     padding-right: 60px;
+//   }
+// }
+
+.form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+//   @media (min-width: $tablet-width) {
+//     display: flex;
+//     flex-direction: column;
+//   }
+}
+
+.form__group--type {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 67px;
+  }
+}
+
+.form__group-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    // grid-template-columns: min-content 1fr;
+    grid-template-columns: 157px 1fr;
+    column-gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 181px;
+  }
+}
+
+.form__group .title--h4 {
+  font-size: 17px;
+  line-height: 16px;
+  color: $green-63;
+}
+
+// .form__group--color .form__list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// .form__group--contacts {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .form__group--contacts .line {
+//   @media (min-width: $desktop-width) {
+//     padding-bottom: 72px;
+//     padding-top: 69px;
+//   }
+// }
+
+// .form__group--contacts .line::before {
+//   top: 37%;
+
+//   @media (min-width: $tablet-width) {
+//     top: 49%;
+//   }
+// }
+
+// .form__group--contacts .line__text {
+//   max-width: 80%;
+//   padding-right: 18px;
+
+//   @media (min-width: $tablet-width) {
+//     max-width: 97%;
+//     padding-right: 35px;
+//   }
+// }
+
+// .form__field-email {
+//   @media (min-width: $desktop-width) {
+//     padding-bottom: 0;
+//   }
+// }
+
+// .form__field-email .form__field {
+//   padding-right: 50px;
+// }
+
+
+
+// .form__field-phone .form__label {
+//   padding-right: 8px;
+
+//   @media (min-width: $tablet-width) {
+//     padding-right: 15px;
+//   }
+// }
+
+// .form__field-phone .form__field {
+//   padding-right: 45px;
+// }
+
+
+.form__list {
+  @include list-zeroing;
+  padding-top: 30px;
+  padding-bottom: 43px;
+//   color: $grey-22;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+// .form__group--programm .form__list {
+//   @media (min-width: $tablet-width) {
+//     padding: 30px;
+//     border: 1px solid $grey-e7;
+//   }
+// }
+
+.form__item:not(:last-child) {
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 41px;
+  }
+}
+
+/* Блок "Цвет" */
+.form__group--grey {
+  @media (min-width: $tablet-width) {
+    padding: 50px 0;
+    background-color: $grey-f1;
+  }
+}
+
+.form__group--color {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 69px;
+    // background-color: $grey-f1;
+  }
+}
+
+.form__group--color .form__group-wrapper {
+  @media (min-width: $desktop-width) {
+    padding-right: 118px;
+  }
+}
+
+.form__group--color .form__list {
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 43px 30px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 38px 25px;
+  }
+}
+
+.form__group--color .form__item:not(:last-child) {
+  padding-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+/* Блок "ФИО" */
+.form__group--info {
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
+}
+
+// .form__group--info .line {
+//   @media (min-width: $tablet-width) {
+//     padding-top: 0;
+//   }
+// }
+
+.form__field-group-wrapper {
+  padding-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.form__field-group {
+  //   position: relative;
+  display: flex;
+  flex-direction: column;
+  //   align-items: center;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 25px;
+    padding-bottom: 24px;
+  }
+}
+
+.form__field-group:last-of-type {
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+  }
+}
+
+.form__field {
+  width: 100%;
+  padding: 17px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+    padding-bottom: 18px;
+    padding-left: 18px;
+  }
+}
+
+/* Блок "Тел / E-mail" */
+// .form__group--contacts {
+
+// }
+
+.form__group--contacts .form__field-phone {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 24px;
+  }
+}
+
+.form__group--contacts .form__field-email {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+// .form__field-phone .
+
+  // .form__label {
+  //   max-width: 36%;
+  //   padding-right: 13px;
+
+  //   @media (min-width: $tablet-width) {
+  //     padding-right: 19px;
+  //   }
+  // }
+
+.form__field-icon {
+  position: relative;
+  width: 100%;
+}
+
+.form__field-icon .form__field {
+  padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  color: rgba($black, 0.2);
+}
+
+.form__icon--phone {
+//   position: absolute;
+  top: 11px;
+  right: 7px;
+//   color: $black;
+
+  @media (min-width: $tablet-width) {
+    right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 8px;
+  }
+}
+
+.form__icon--email {
+//   position: absolute;
+  top: 16px;
+  right: 3px;
+//   color: $grey-22;
+
+  @media (min-width: $tablet-width) {
+    right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 4px;
+  }
+}
+
+/* Блок "Доп" */
+.form__group--comment {
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
+}
+
+.form__group--comment .form__field-group {
+  padding-top: 23px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0px;
+    padding-bottom: 53px;
+  }
+}
+
+.form__group--comment .field {
+  border: 2px solid $grey-44;
+  box-shadow: none;
+//   @media (min-width: $tablet-width) {
+//     font-size: 20px;
+//     line-height: 30px;
+//   }
+}
+
+.form__group--comment .field:hover {
+  border-color: $green-62;
+  box-shadow: none;
+}
+
+.form__group--comment .field:focus-visible {
+  border-color: $green-62;
+  outline: none;
+  box-shadow: none;
+}
+
+.form__field-comment {
+  padding: 17px;
+
+//   @media (min-width: $tablet-width) {
+//     height: 174px;
+//     padding-left: 19px;
+//   }
+}
+
+// .form__group--additional {
+//   color: $black;
+// }
+
+// .form__group--additional .line {
+//   @media (min-width: $tablet-width) {
+//     padding-top: 65px;
+//     padding-bottom: 58px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     padding-top: 68px;
+//   }
+// }
+
+// .form__group--additional .line::before {
+//   @media (min-width: $tablet-width) {
+//     top: 53%;
+//   }
+// }
+
+// .form__group--additional .form__list {
+//   padding-top: 0;
+//   padding-bottom: 39px;
+
+//   @media (min-width: $tablet-width) {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     gap: 42px 60px;
+//     padding-bottom: 59px;
+//     padding-left: 5px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     grid-template-columns: 1fr 1fr 1fr 1fr;
+//     gap: 25px 80px;
+//     padding-bottom: 66px;
+//   }
+// }
+
+// .form__group--additional .form__item {
+//   @media (min-width: $tablet-width) {
+//     padding-bottom: 0;
+//   }
+// }
+
+// .form__group-container {
+//   @media (min-width: $tablet-width) {
+//     padding-bottom: 72px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     padding-bottom: 82px;
+//   }
+// }
+
+/* Блок "Поля обязательны..." */
+.form__description-button .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.form__description-small {
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $grey-44;
+  // text-align: center;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    padding-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+//     margin-left: 62px;
+//     padding: 0;
+//     font-size: 16px;
+  }
+
+//   @media (min-width: $desktop-width) {
+//     margin-left: 77px;
+//   }
+}
+
+// .form__group-container .button {
+//   width: 100%;
+
+//   @media (min-width: $tablet-width) {
+//     width: 45%;
+//     padding-top: 16px;
+//     padding-bottom: 16px;
+//     font-size: 20px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     width: 47%;
+//   }
+// }
+
+.form__button {
+  width: 100%;
+  font-size: 17px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+}

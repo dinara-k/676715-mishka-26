@@ -11,19 +11,19 @@
 }
 
 @mixin block-centering-mobile {
-  width: 280px;
+  width: 260px;
   margin-right: auto;
   margin-left: auto;
 }
 
 @mixin block-centering-tablet {
-  width: 709px;
+  width: 668px;
   margin-right: auto;
   margin-left: auto;
 }
 
 @mixin block-centering-desktop {
-  width: 1220px;
+  width: 1048px;
   margin-right: auto;
   margin-left: auto;
 }
