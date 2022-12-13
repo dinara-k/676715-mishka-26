@@ -75,6 +75,7 @@
 
 .advantages__item {
   position: relative;
+  // padding-top: 80px;
   padding-top: 83px;
 
   @media (min-width: $tablet-width) {
@@ -87,8 +88,9 @@
   // }
 }
 
-.advantages__item:first-child {
-  // padding-top: 82px;
+.advantages__list-item:first-of-type .advantages__item:first-child {
+  padding-top: 82px;
+
   @media (min-width: $tablet-width) {
     padding-top: 98px;
   }

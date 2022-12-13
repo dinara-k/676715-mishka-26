@@ -41,11 +41,11 @@
   content: "";
   top: 20px;
   // top: 0;
-  right: 20px;
-  width: 24px;
+  right: 31px;
+  width: 20px;
   height: 2px;
   background-color: $black-23;
-  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -77,8 +77,8 @@
   position: absolute;
   content: "";
   top: 26px;
-  right: 20px;
-  width: 21px;
+  right: 27px;
+  width: 26px;
   height: 2px;
   background-color: $black;
 }

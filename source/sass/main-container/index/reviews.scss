@@ -84,7 +84,7 @@
 .reviews__owner-instagram {
   display: flex;
   flex-direction: column;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
   font-size: 17px;
   line-height: 24px;
 
@@ -93,6 +93,10 @@
     padding-bottom: 0;
     line-height: 30px;
   }
+}
+
+.reviews__owner {
+  padding-bottom: 5px;
 }
 
 .reviews__slider-controls {
