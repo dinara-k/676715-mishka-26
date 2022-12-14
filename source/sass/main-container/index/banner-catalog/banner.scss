@@ -19,8 +19,10 @@
     min-height: 757px;
     padding-top: 155px;
     background-image: url("../img/banner/banner-background-tablet.jpg");
+    background-size: contain;
+    background-position: center top;
     background-color: $grey-f9;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/banner/banner-background-tablet@2x.jpg");
@@ -28,9 +30,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    // min-height: 763px;
     padding-top: 157px;
 //     min-height: 555px;
-    margin-bottom: 54px;
+    // margin-bottom: 54px;
     background-image: url("../img/banner/banner-background-desktop.jpg");
 
     @media (min-resolution: 2dppx) {

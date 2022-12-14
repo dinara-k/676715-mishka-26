@@ -14,6 +14,7 @@
   background-repeat: repeat-x;
 
   @media (min-width: $tablet-width) {
+    bottom: 2px;
     height: 17px;
     background-image: url("../img/icons/zigzag/grey/icon-zigzag-tablet.png");
   }

@@ -130,7 +130,7 @@
 .form__list {
   @include list-zeroing;
   padding-top: 30px;
-  padding-bottom: 43px;
+  padding-bottom: 32px;
 //   color: $grey-22;
 
   @media (min-width: $tablet-width) {
@@ -176,7 +176,8 @@
 }
 
 .form__group--color .form__list {
-  padding-top: 25px;
+  padding-top: 22px;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -192,7 +193,8 @@
 }
 
 .form__group--color .form__item:not(:last-child) {
-  padding-bottom: 43px;
+  // padding-bottom: 43px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;

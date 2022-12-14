@@ -78,7 +78,7 @@
   content: "";
   top: 26px;
   right: 27px;
-  width: 26px;
+  width: 27px;
   height: 2px;
   background-color: $black;
 }
@@ -109,7 +109,7 @@
 .main-nav--opened .main-nav__wrapper {
   position: relative;
   left: 0;
-  top: 0;
+  top: 22px;
   z-index: 10;
 
   @media (min-width: $tablet-width) {
@@ -176,10 +176,14 @@
 
 .main-nav__link {
   display: block;
-  padding: 29px 33px 27px 76px;
+  padding: 29px 33px 25px 76px;
 
   @media (min-width: $tablet-width) {
-    padding: 22px 0 22px 0;
+    padding: 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 0;
   }
 }
 
@@ -208,6 +212,12 @@
     flex-wrap: wrap;
     top: 0;
     max-width: 800px;
+  }
+}
+
+.main-nav__item--sub:not(:last-child) {
+  @media (min-width: $desktop-width) {
+    margin-right: 61px;
   }
 }
 
