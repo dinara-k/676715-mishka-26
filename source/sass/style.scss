@@ -1,1 +1,53 @@
-// Начните писать стили здесь
+// Global
+@import "./global/variable.scss";
+@import "./global/mixin.scss";
+@import "./global/fonts.scss";
+@import "./global/title/title.scss";
+@import "./global/title/title-inner.scss";
+@import "./global/text.scss";
+@import "./global/text-container.scss";
+@import "./global/button.scss";
+@import "./global/zigzag/zigzag-white.scss";
+@import "./global/zigzag/zigzag-grey.scss";
+@import "./global/global.scss";
+@import "./global/page.scss";
+@import "./global/modal/modal.scss";
+@import "./global/modal/product-size-form.scss";
+@import "./global/modal/modal-control.scss";
+
+// Header
+@import "./header/header.scss";
+@import "./header/logo.scss";
+@import "./header/catalog-menu/main-nav.scss";
+@import "./header/catalog-menu/menu-background.scss";
+@import "./header/catalog-menu/site-list.scss";
+@import "./header/user-menu/user-nav.scss";
+@import "./header/user-menu/user-list.scss";
+
+// Main-container
+@import "./main-container/main-container.scss";
+
+// Index - Main-container
+@import "./main-container/index/banner-catalog/banner-catalog.scss";
+@import "./main-container/index/banner-catalog/banner.scss";
+@import "./main-container/index/banner-catalog/catalog.scss";
+@import "./main-container/index/product-week.scss";
+@import "./main-container/index/advantages.scss";
+@import "./main-container/index/reviews.scss";
+@import "./main-container/index/contacts.scss";
+
+// Catalog - Main-container
+@import "./main-container/catalog/products.scss";
+@import "./main-container/catalog/video.scss";
+
+// Form - Main-container
+@import "./main-container/form/order.scss";
+@import "./main-container/form/form.scss";
+@import "./main-container/form/line.scss";
+@import "./main-container/form/control.scss";
+@import "./main-container/form/field.scss";
+
+// Footer
+@import "./footer/footer.scss";
+@import "./footer/social.scss";
+@import "./footer/copyright.scss";

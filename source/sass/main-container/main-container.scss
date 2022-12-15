@@ -1,0 +1,17 @@
+.main-container {
+  position: relative;
+}
+
+.main-container--inner .title--h1 {
+  text-align: center;
+}
+
+.main-container--inner .zigzag-white::after {
+  @media (min-width: $tablet-width) {
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/icons/zigzag/white/icon-zigzag-fill-inner-desktop.png");
+  }
+}

@@ -1,0 +1,24 @@
+.order {
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 99px;
+  }
+}
+
+.order__description {
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 702px;
+  }
+}

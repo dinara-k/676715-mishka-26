@@ -1,0 +1,38 @@
+.banner {
+  min-height: 300px;
+  background-image: url("../img/banner/banner-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top -20px;
+  padding-top: 73px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/banner/banner-background-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 757px;
+    padding-top: 155px;
+    background-image: url("../img/banner/banner-background-tablet.jpg");
+    background-size: contain;
+    background-position: center top;
+    background-color: $grey-f9;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/banner/banner-background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 157px;
+    background-image: url("../img/banner/banner-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/banner/banner-background-desktop@2x.jpg");
+    }
+  }
+}
+
+.banner__wrapper {
+  text-align: center;
+}

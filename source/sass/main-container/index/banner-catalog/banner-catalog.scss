@@ -1,0 +1,12 @@
+.banner-catalog {
+  position: relative;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+  }
+}

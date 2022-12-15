@@ -1,0 +1,42 @@
+.copyright {
+  border-top: 1px solid $grey-e5;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.copyright__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $black;
+  background-color: $grey-f1;
+}
+
+.copyright__link {
+  color: $green-63;
+  text-decoration: none;
+}
+
+.copyright__icon {
+  display: grid;
+  place-items: center;
+  margin-left: 27px;
+}
+
+.copyright__link:hover {
+  color: $green-46;
+}
+
+.copyright__link:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+.copyright__link:active {
+  color: rgba($green-46, 0.3);
+}

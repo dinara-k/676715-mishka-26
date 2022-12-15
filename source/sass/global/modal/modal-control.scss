@@ -1,0 +1,54 @@
+/* Modal control */
+.modal-control {
+  position: relative;
+  display: block;
+  padding: 18px 16px 16px 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+
+/* Modal mark */
+.modal-control__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 82px;
+  height: 52px;
+  border: 2px solid rgba($grey-44, 0.1);
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    height: 52px;
+  }
+}
+
+.modal-control__input:hover + .modal-control__mark {
+  border-color: rgba($grey-44, 0.3);
+}
+
+.modal-control__input:focus ~ .modal-control__mark {
+  border-color: rgba($black, 0.3);
+  outline: none;
+}
+
+.modal-control__input:active + .modal-control__mark {
+  border-color: rgba($black, 0.3);
+}
+
+.modal-control__input:disabled + .modal-control__mark,
+.modal-control__input:disabled:hover + .modal-control__mark {
+  border-color: $grey-e5;
+  opacity: 0.5;
+}
+
+.modal-control__input:disabled ~ .modal-control__label,
+.modal-control__input:disabled:hover ~ .modal-control__label {
+  color: rgba($grey-44, 0.3);
+}
+
+.modal-control__input[type="radio"]:checked + .modal-control__mark {
+  border-color: $green-63;
+}

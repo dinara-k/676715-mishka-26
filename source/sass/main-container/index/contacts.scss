@@ -1,0 +1,199 @@
+.contacts {
+  padding-top: 38px;
+  padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include block-centering-desktop;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 51px;
+  }
+}
+
+.contacts__content {
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    padding-right: 23px;
+    padding-left: 63px;
+  }
+}
+
+.contacts__content .text-container {
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.contacts__content-container {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 375px;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-left: 110px;
+  }
+}
+
+.contacts__content-container::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    top: -22px;
+    right: 3px;
+    width: 47px;
+    height: 81px;
+    background-image: url("../img/icons/icon-flag.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 63px;
+    left: 0;
+  }
+}
+
+.contacts__title {
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 35px;
+  }
+}
+
+.contacts__parametrs,
+.contacts__email {
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.contacts__parametrs {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 305px 340px;
+    column-gap: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts__parametrs-container {
+  display: flex;
+  column-gap: 35px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 25px;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 30px;
+  }
+}
+
+.contacts__parametrs-container:last-child {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.contacts__parametrs-value {
+  margin: 0;
+}
+
+.contacts__email {
+  color: inherit;
+  text-decoration-color: $green-62;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+
+  @media (min-width: $tablet-width) {
+    text-underline-offset: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-underline-offset: 13px;
+  }
+}
+
+.contacts__email:hover {
+  color: $green-46;
+  text-decoration-color: $green-46;
+}
+
+.contacts__email:focus {
+  color: $green-46;
+  text-decoration-color: rgba($green-46, 0.3);
+  outline: none;
+}
+
+.contacts__email:active {
+  color: $green-46;
+  text-decoration-color: rgba($green-46, 0.1);
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  height: 455px;
+  margin-bottom: 42px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 457px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    padding-bottom: 0;
+  }
+}
+
+.contacts__button {
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 105px;
+    left: 175px;
+  }
+}

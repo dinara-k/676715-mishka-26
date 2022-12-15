@@ -1,0 +1,82 @@
+.user-nav {
+  @include list-zeroing;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -55px;
+    left: 207px;
+    z-index: 1;
+    display: flex;
+    width: 348px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -50px;
+    left: 0;
+  }
+}
+
+.user-nav__item {
+  border-bottom: 1px solid $grey-ec;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+}
+
+.user-nav__button,
+.user-nav__link {
+  position: relative;
+  padding: 29px 33px 27px 76px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 89px;
+    padding: 32px;
+    overflow: hidden;
+  }
+}
+
+.user-nav__button {
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    place-items: center;
+    padding: 32px 41px;
+  }
+}
+
+.user-nav__button-name {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.user-nav__link {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 82px;
+    padding-right: 0;
+  }
+}
+
+.user-nav__icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  @media (min-width: $tablet-width) {
+    top: 35px;
+  }
+}
+
+.user-nav__button .user-nav__icon {
+  @media (min-width: $tablet-width) {
+    top: 25px;
+    left: 33px;
+  }
+}

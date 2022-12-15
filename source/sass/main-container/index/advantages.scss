@@ -1,0 +1,122 @@
+.advantages {
+  padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 68px;
+  }
+}
+
+.advantages-container {
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 265px 333px;
+    column-gap: 70px;
+    padding-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 85px;
+    padding-bottom: 89px;
+  }
+}
+
+.advantages__list-item {
+  @include list-zeroing;
+}
+
+.advantages__item {
+  position: relative;
+  padding-top: 83px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 110px;
+  }
+}
+
+.advantages__list-item .advantages__item:first-child {
+  @media (min-width: $tablet-width) {
+    padding-top: 97px;
+  }
+}
+
+.advantages__list-item:first-of-type .advantages__item:first-child {
+  padding-top: 82px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 95px;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+
+.advantages__item::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 58px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    bottom: 64px;
+  }
+}
+
+.advantages__item--eco::before {
+  width: 33px;
+  height: 38px;
+  background-image: url("../img/icons/advantages/icon-eco.svg");
+}
+
+.advantages__item--style::before {
+  width: 47px;
+  height: 27px;
+  background-image: url("../img/icons/advantages/icon-style.svg");
+}
+
+.advantages__item--like::before {
+  width: 34px;
+  height: 27px;
+  background-image: url("../img/icons/advantages/icon-like.svg");
+}
+
+.advantages__item--knitting::before {
+  width: 35px;
+  height: 34px;
+  background-image: url("../img/icons/advantages/icon-knitting.svg");
+}
+
+.advantages__item--manufacturer::before {
+  width: 55px;
+  height: 23px;
+  background-image: url("../img/icons/advantages/icon-manufacturer.svg");
+}
+
+.advantages__item--gift::before {
+  width: 33px;
+  height: 32px;
+  background-image: url("../img/icons/advantages/icon-gift.svg");
+}

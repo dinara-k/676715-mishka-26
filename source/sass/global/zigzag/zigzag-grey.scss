@@ -1,0 +1,28 @@
+.zigzag-grey {
+  position: relative;
+}
+
+.zigzag-grey::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 6px;
+  background-image: url("../img/icons/zigzag/grey/icon-zigzag-mobile.png");
+  background-repeat: repeat-x;
+
+  @media (min-width: $tablet-width) {
+    bottom: 2px;
+    height: 17px;
+    background-image: url("../img/icons/zigzag/grey/icon-zigzag-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc((100% - 1050px) / 2);
+    width: 1050px;
+    height: 23px;
+    background-image: url("../img/icons/zigzag/grey/icon-zigzag-desktop.png");
+  }
+}
