@@ -3,11 +3,6 @@
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
-
-  // @media (min-width: $tablet-width) {
-  //   font-size: 20px;
-  //   line-height: 30px;
-  // }
 }
 
 .product-size-form__list {
@@ -22,9 +17,7 @@
   height: 52px;
   margin-right: 7px;
   margin-bottom: 7px;
-  // display: flex;
-  //   align-items: center;
-  //   justify-content: center;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 112px;

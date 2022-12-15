@@ -16,20 +16,10 @@
   }
 }
 
-// .contacts--inner {
-//   background-color: $grey-f2;
-// }
-
 .contacts__content {
   margin-bottom: 31px;
 
-//   @include block-centering-mobile;
-//   padding: 26px 0 16px 0;
-
   @media (min-width: $tablet-width) {
-  //   position: relative;
-//     @include block-centering-tablet;
-//     padding: 60px 40px 50px 40px;
     margin-bottom: 22px;
   }
 
@@ -37,21 +27,12 @@
     width: 50%;
     padding-right: 23px;
     padding-left: 63px;
-//     position: absolute;
-//     top: 95px;
-//     left: 110px;
-//     width: 565px;
-//     margin: 0;
-//     padding: 60px 80px 50px 80px;
-//     background-color: $white;
   }
 }
 
 .contacts__content .text-container {
   @media (min-width: $desktop-width) {
     width: auto;
-//     margin-right: 0;
-//     margin-left: 0;
   }
 }
 
@@ -61,6 +42,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-height: 375px;
+    overflow: hidden;
     padding-top: 80px;
     padding-left: 110px;
   }
@@ -83,18 +66,6 @@
     left: 0;
   }
 }
-/*
-.contacts__content-wrapper {
-  // padding-bottom: 10px;
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: min-content, 1fr, min-content;
-    column-gap: 23px;
-  }
-}
-*/
 
 .contacts__title {
   padding-bottom: 28px;
@@ -123,7 +94,6 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    // grid-template-columns: repeat(2, 1fr);
     grid-template-columns: 305px 340px;
     column-gap: 27px;
   }
@@ -190,28 +160,10 @@
   text-decoration-color: rgba($green-46, 0.1);
 }
 
-// .contacts__item {
-//   width: 139px;
-// }
-
 .contacts__address {
   font-style: normal;
-  // line-height: 20px;
-
-//   @media (min-width: $tablet-width) {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     width: 156px;
-//     text-align: right;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     text-align: left;
-//   }
 }
 
-// .contacts iframe {
 .contacts__map {
   display: block;
   width: 100%;
@@ -222,11 +174,9 @@
   @media (min-width: $tablet-width) {
     height: 457px;
     margin-bottom: 55px;
-    // padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    // position: absolute;
     width: 50%;
     padding-bottom: 0;
   }

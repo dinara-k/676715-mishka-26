@@ -1,34 +1,22 @@
 /* Control */
 .control {
   position: relative;
-  // display: block;
-
-  // 1 вар ---
   display: grid;
   grid-template-columns: 40px 1fr;
   column-gap: 20px;
   align-items: center;
-
-  // 2 вар ---
-  // display: flex;
-  // column-gap: 20px;
-  // align-items: center;
-  // padding-top: 10px;
-  // padding-left: 60px;
   min-height: 39px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 15px;
-    padding-left: 77px;
+    grid-template-columns: 50px 1fr;
+    column-gap: 27px;
+    min-height: 50px;
   }
 }
 
 /* Mark */
 .control__mark {
   position: relative;
-  // top: 0;
-  // left: 0;
-  flex-shrink: 0;
   width: 39px;
   height: 39px;
   border: 2px solid $grey-44;
@@ -36,7 +24,6 @@
   @media (min-width: $tablet-width) {
     width: 50px;
     height: 50px;
-    // transform: scale(1.33);
   }
 }
 
@@ -51,7 +38,6 @@
 
 .control__input:active + .control__mark {
   border-color: rgba($black, 0.3);
-  // outline: none;
 }
 
 .control__input:disabled + .control__mark,
@@ -73,29 +59,28 @@
 .control__input[type="checkbox"]:checked + .control__mark {
   position: absolute;
   content: "";
-  // width: 39px;
-  // height: 39px;
-  // padding: 10px 6px;
   background-image: url("../img/icons/icon-form-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 24px 17px;
 
   @media (min-width: $tablet-width) {
     width: 50px;
     height: 50px;
-    padding: 14px 8px;
+    background-size: 32px 22px;
   }
 }
-
-// .control__input[type="checkbox"]:checked ~ .control__label {
-//   // padding-left: 60px;
-// }
 
 /* Radio */
 .control__input[type="radio"] + .control__mark {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .control__input[type="radio"]:checked + .control__mark::before {

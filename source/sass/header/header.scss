@@ -1,21 +1,15 @@
 .header {
   position: relative;
-  // text-transform: uppercase;
   height: 57px;
-  // border-top: 1px solid $grey-ec;
-  // border-bottom: 1px solid $grey-ec;
-  /* заменить нижнюю черту псевдоэлементом */
 
   @media (min-width: $tablet-width) {
     height: 66px;
     margin-top: 22px;
-    // margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
     height: 79px;
     margin-top: 10px;
-  //   margin-bottom: 29px;
   }
 }
 
@@ -65,14 +59,10 @@
 
 .header__logo {
   display: block;
-  // justify-content: space-between;
-  // align-items: center;
   width: 86px;
   height: 35px;
   margin-top: 22px;
   margin-left: 116px;
-  // padding-top: 10px;
-  // padding-bottom: 17px;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
@@ -92,7 +82,6 @@
   }
 }
 
-// .header__logo-image {
-//   display: block;
-//   width: 100%;
-// }
+.header__logo-image {
+  width: auto;
+}

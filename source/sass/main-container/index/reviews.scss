@@ -41,10 +41,6 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    // display: grid;
-    // grid-template-columns: 1fr 175px;
-    // grid-template-rows: min-content 1fr min-content;
-    // gap: 39px 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,11 +63,6 @@
 
 .reviews__list {
   @include list-zeroing;
-
-  // @media (min-width: $tablet-width) {
-  //   grid-column: 1 / -1;
-  //   grid-row: 2 / 3;
-  // }
 }
 
 .reviews__description {
@@ -107,7 +98,6 @@
   padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
-    // padding-bottom: 0;
     font-size: 18px;
     line-height: 24px;
   }

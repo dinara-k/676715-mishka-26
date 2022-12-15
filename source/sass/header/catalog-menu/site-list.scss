@@ -1,9 +1,11 @@
-// .site-list {
-
-// }
+.site-list {
+  @media (min-width: $tablet-width) {
+    max-height: 100px;
+    overflow: hidden;
+  }
+}
 
 .site-list__item {
-  // text-align: center;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
@@ -22,15 +24,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
-    // background-color: $grey-f9;
     background-color: transparent;
-  }
-
-  @media (min-width: $desktop-width) {
-
-  //   line-height: 30px;
-  //   color: $white;
-  //   background-color: transparent;
   }
 }
 
@@ -50,19 +44,6 @@
 .site-list__link--active {
   text-decoration: underline;
 }
-
-// .site-list--inner .site-list__link {
-//   @media (min-width: $desktop-width) {
-//     color: $black;
-//     background-color: transparent;
-//   }
-// }
-
-// .site-list--inner .site-list__link--active {
-//   @media (min-width: $desktop-width) {
-//     text-decoration-color: $green-main;
-//   }
-// }
 
 .site-list__item--sub:not(:last-child) {
   @media (min-width: $desktop-width) {

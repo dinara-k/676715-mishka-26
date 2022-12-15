@@ -1,22 +1,13 @@
-// .social {
-//   padding: 20px 0 15px 0;
-//   border-top: 1px solid $grey-d9;
-//   border-bottom: 1px solid $grey-d9;
-
-//   @media (min-width: $tablet-width) {
-//     padding: 0 20px 0 40px;
-//     border-top: 0;
-//     border-bottom: 0;
-//   }
-// }
+.social__element {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
 .social__element:not(:last-child) {
   margin-right: 31px;
-  padding-bottom: 10px;
 }
 
 .social__link {
-  // display: block;
   display: grid;
   place-items: center;
   width: 28px;
