@@ -22,8 +22,10 @@
     z-index: -1;
     width: 350px;
     height: 457px;
+    background-color: $grey-f1;
     background-image: url("../img/reviews/reviews-background-tablet.jpg");
     background-repeat: no-repeat;
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/reviews/reviews-background-tablet@2x.jpg");
